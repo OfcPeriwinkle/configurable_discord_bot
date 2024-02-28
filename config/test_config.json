@@ -1,0 +1,188 @@
+{
+  "guild": 123,
+  "allowed_channels": [456],
+  "true_replies": true,
+  "commands": {
+    "ms": {
+      "enabled": true,
+      "restricted_users": [],
+      "restricted_roles": [],
+      "cooldowns": [180, 240],
+      "role_cooldowns": {
+        "123": [10800, 21600]
+      },
+      "cooldown_message_prob": 100,
+      "cooldown_messages": ["Cooldown message 5", "Cooldown message 6"]
+    },
+    "eightball": {
+      "enabled": true,
+      "restricted_users": [],
+      "restricted_roles": [],
+      "cooldowns": [60, 120, 180],
+      "cooldown_message_prob": 100,
+      "cooldown_messages": ["Cooldown message 1", "Cooldown message 2"],
+      "response_category_probability": {
+        "user": 30,
+        "role": 20,
+        "generic": 50
+      },
+      "actions": {
+        "users": {
+          "456": ["User eightball 1", "User eightball 2"]
+        },
+        "roles": {
+          "123": ["Role eightball 3", "Role eightball 4"]
+        },
+        "GENERIC": [
+          "Generic eightball 1"
+        ]
+      }
+    },
+    "news": {
+      "enabled": true,
+      "restricted_users": [],
+      "restricted_roles": [],
+      "cooldowns": [180, 240],
+      "cooldown_message_prob": 100,
+      "cooldown_messages": ["Cooldown message 3", "Cooldown message 4"],
+      "youtube_channel_ids": [
+        "somechannelid",
+        "anotherchannelid"
+      ]
+    }
+  },
+  "message_actions": {
+    "users": {
+      "123": {
+        "special phrase 1": {
+          "react_probability": 33,
+          "reactions": {
+            "❤️‍🔥": 100
+          },
+          "reply_probability": 33,
+          "replies": {
+            "User message reply 1": 50,
+            "User message reply 2": 50
+          },
+          "image_probability": 33,
+          "images": {
+            "img/sample_image.jpg": 50,
+            "img/another_image.jpg": 50
+          }
+        },
+        "test": {
+          "react_probability": 50,
+          "reactions": {
+            "💀": 100
+          },
+          "reply_probability": 50,
+          "replies": {
+            "User message reply 3": 50,
+            "User message reply 4": 50
+          }
+        },
+        "GENERIC": {
+          "react_probability": 10,
+          "reactions": {
+            "🐬": 100
+          },
+          "reply_probability": 10,
+          "replies": {
+            "User generic reply 1": 50,
+            "User generic reply 2": 50
+          }
+        }
+      }
+    },
+    "roles": {
+      "123": {
+        "hi": {
+          "react_probability": 50,
+          "reactions": {
+            "👋": 100
+          },
+          "reply_probability": 50,
+          "replies": {
+            "Role message reply 1": 50,
+            "Role message reply 2": 50
+          }
+        },
+        "GENERIC": {
+          "react_probability": 50,
+          "reactions": {
+            "👍": 90,
+            "👎": 10
+          },
+          "reply_probability": 50,
+          "replies": {
+            "Role generic response text 1": 50,
+            "Role generic response text 2": 50
+          }
+        }
+      }
+    }
+  },
+  "reaction_actions": {
+    "users": {
+      "123": {
+        "😈": {
+          "image_probability": 100,
+          "images": {
+            "img/sample_image.png": 100
+          }
+        },
+        "🔢": {
+          "react_probability": 50,
+          "reactions": {
+            "❤️": 100
+          },
+          "reply_probability": 50,
+          "replies": {
+            "User react reply 1": 50,
+            "User react reply 2": 50
+          }
+        },
+        "👎": {
+          "react_probability": 50,
+          "reactions": {
+            "💀": 100
+          },
+          "reply_probability": 50,
+          "replies": {
+            "User react reply 3": 50,
+            "User react reply 4": 50
+          },
+          "reputation_change": -50
+        },
+        "👍": {
+          "image_probability": 100,
+          "images": {
+            "img/sample_image.jpg": 100
+          },
+          "reputation_change": 50
+        }
+      }
+    },
+    "roles": {
+      "123": {
+        "🐻": {
+          "react_probability": 50,
+          "reactions": {
+            "🐱": 100
+          },
+          "reply_probability": 50,
+          "replies": {
+            "Role react reply 1": 50,
+            "Role react reply 2": 50
+          }
+        },
+        "❤️": {
+          "reputation_change": 25
+        },
+        "🤡": {
+          "reputation_change": -25
+        }
+      }
+    }
+  }
+}

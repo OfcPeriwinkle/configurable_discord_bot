@@ -1,0 +1,11 @@
+*.egg-info
+.venv
+.vscode
+.gitignore
+README.md
+__pycache__
+*.pyc
+db_sync.py
+*.log
+*.csv
+.env
