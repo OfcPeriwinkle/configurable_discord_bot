@@ -48,10 +48,10 @@ bot_runner config.json
 
 ## Environment Variables
 
-* SUPABASE_URL: The URL of your Supabase database.
-* SUPABASE_KEY: The API key for your Supabase database.
-* DISCORD_TOKEN: The bot token for your Discord bot.
-* GOOGLE_API_KEY: The API key for the YouTube Data API.
+* `SUPABASE_URL`: The URL of your Supabase database.
+* `SUPABASE_KEY`: The API key for your Supabase database.
+* `DISCORD_TOKEN`: The bot token for your Discord bot.
+* `GOOGLE_API_KEY`: The API key for the YouTube Data API's service account.
 
 ## Configuration
 
