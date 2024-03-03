@@ -30,15 +30,15 @@ cd configurable_discord_bot
 
 3. Create a virtual environment:
 ```bash
-`python3 -m venv .venv`
+python3 -m venv .venv
 ```
 4. Activate the virtual environment: 
 ```bash
-`source .venv/bin/activate`
+source .venv/bin/activate
 ```
 5. Install the package:
 ```bash
-`pip install -e .`
+pip install -e .
 ```
 6. Set up environment variables for Discord, Supabase, and YouTube (see below)
 7. Run the bot: 
