@@ -3,7 +3,7 @@
 This is a simple Discord bot that can be configured using JSON files. It uses PostgreSQL to persist user reputation scores and provides a few additional features such as a minesweeper game and integration with YouTube's API to fetch recent uploads from configured channels.
 
 This project's motivation is primarily to build some more experience using CI/CD tools, Docker, and Google Cloud Platform. The bot itself
-is a just fun little app that is built into a Docker image, uploaded to DockerHub, and then deployed to a GCP computer engine VM.
+is a just fun little app that is built into a Docker image, uploaded to DockerHub, and then deployed to a GCP compute engine VM.
 
 Since the bot isn't really the focus of this project, please refer to the source code's documentation for how to create a config and extend the bot. If you have any questions please feel free to get in touch and I'll be happy to help!
 
